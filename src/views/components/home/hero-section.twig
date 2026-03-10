@@ -1,0 +1,59 @@
+{#
+| Variable         | Type    | Description                     |
+|------------------|---------|---------------------------------|
+| store            | object  | Store information                |
+| theme            | object  | Theme settings                   |
+#}
+
+<section class="hero-section">
+  {# Background decorations #}
+  <div class="hero-ornament"></div>
+
+  {# Hero content #}
+  <div class="hero-content">
+    {# Badge #}
+    <div class="inline-flex items-center gap-2 border border-gold border-opacity-40 px-4 py-1.5 mb-6 text-gold text-xs uppercase tracking-widest font-latin">
+      <span class="w-5 h-px bg-gold opacity-60"></span>
+      PREMIUM IMPORTED MEATS
+      <span class="w-5 h-px bg-gold opacity-60"></span>
+    </div>
+
+    {# Title #}
+    <h1 class="hero-title">
+      لحوم فاخرة<br>
+      <em>من قلب أفريقيا</em>
+    </h1>
+
+    {# Subtitle #}
+    <p class="hero-subtitle">
+      نختار لك أجود القطع من إثيوبيا وكينيا، مذبوحة على الطريقة الإسلامية، 
+      لتصل إلى مائدتك طازجةً بكل نكهتها الأصيلة.
+    </p>
+
+    {# CTA Buttons #}
+    <div class="flex gap-4 mb-12">
+      <a href="{{ link('products') }}" class="btn-primary">
+        تسوّق الآن
+      </a>
+      <a href="#origin-story" class="btn-ghost">
+        ← اكتشف القصة
+      </a>
+    </div>
+
+    {# Stats #}
+    <div class="flex gap-10 pt-8 border-t border-gold border-opacity-10">
+      <div class="text-right">
+        <span class="block text-gold text-3xl font-light font-latin mb-1">٢٠٠+</span>
+        <span class="block text-smoke text-xs uppercase tracking-widest">قطعة متوفرة</span>
+      </div>
+      <div class="text-right">
+        <span class="block text-gold text-3xl font-light font-latin mb-1">١٠٠٪</span>
+        <span class="block text-smoke text-xs uppercase tracking-widest">حلال معتمد</span>
+      </div>
+      <div class="text-right">
+        <span class="block text-gold text-3xl font-light font-latin mb-1">٢٤ساعة</span>
+        <span class="block text-smoke text-xs uppercase tracking-widest">توصيل سريع</span>
+      </div>
+    </div>
+  </div>
+</section>

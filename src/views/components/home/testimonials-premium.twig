@@ -1,0 +1,32 @@
+{#
+| Variable           | Type                      | Description                         |
+|--------------------|---------------------------|-------------------------------------|
+| limit              | string                    | Maximum number of the testimonials  |
+| type               | string                    | `default:store` all, product, store |
+| sort               | string                    |                                     |
+| hide_customer_info | bool                      | show/hide info customers            |
+#}
+
+<section class="py-20 bg-black">
+  <div class="max-w-7xl mx-auto px-5vw">
+    {# Section Header #}
+    <div class="text-center mb-16">
+      <span class="text-xs uppercase tracking-widest text-gold font-latin block mb-3">Customer Reviews</span>
+      <h2 class="text-4xl lg:text-5xl font-bold text-cream mb-4 font-display">
+        ماذا قال <em class="text-gold italic">عملاؤنا</em>
+      </h2>
+    </div>
+
+    {# Testimonials Grid #}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <salla-reviews 
+        {{ display_all_url ? "display-all-link" : "" }} 
+        limit="{{ limit }}" 
+        sort="{{ sort }}" 
+        {{ hide_customer_info ? 'hide-customer-info' : '' }} 
+        type="{{type}}"
+        class="testimonials-wrapper">
+      </salla-reviews>
+    </div>
+  </div>
+</section>

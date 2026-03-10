@@ -1,0 +1,70 @@
+
+// ══════════════════════════════════════════════════════════════
+// AL-TOUR AL-DHAHABI - Premium Meats Theme
+// Color Palette & Global Variables
+// ══════════════════════════════════════════════════════════════
+
+// Colors - Luxury Dark Palette
+$main-color: var(--color-primary);
+$infinte-color: var(--infinte-color);
+$main-text-color: var(--main-text-color);
+
+:root {
+  /* ── PRIMARY PALETTE ── */
+  --black:        #080807;
+  --charcoal:     #111110;
+  --ember:        #1A0A05;
+  --red:          #9B1C1C;
+  --red-hot:      #C42B2B;
+  --gold:         #C9973A;
+  --gold-lt:      #E5BE7A;
+  --cream:        #F2EAD8;
+  --bone:         #D4C9B0;
+  --smoke:        #7A7468;
+
+  /* ── SALLA INTEGRATION ── */
+  --infinte-color: #C9973A;
+  --main-text-color: #F2EAD8;
+  --main-text-color-dark: #D4C9B0;
+
+  /* ── THEME COLORS ── */
+  --color-primary: #9B1C1C;
+  --color-primary-d: #6B1414;
+  --color-primary-l: #C42B2B;
+  --color-primary-reverse: #C9973A;
+  --color-text: #D4C9B0;
+  --bg-gray: #1A1A1A;
+  --color-grey: #111110;
+  --color-light-grey: #1A0A05;
+
+  /* ── TYPOGRAPHY ── */
+  --font-sm: 0.8685714286rem;
+  --font-main: "Noto Naskh Arabic";
+  --font-display: "Amiri";
+  --font-latin: "Cormorant Garamond";
+
+  /* ── SPACING & SIZING ── */
+  --mm-ocd-width: calc(100% - 51px);
+
+  /* ── SHADOWS ── */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(155, 28, 28, 0.3);
+
+  /* ── TRANSITIONS ── */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* ── BORDERS ── */
+  --border-gold: 1px solid rgba(201, 151, 58, 0.15);
+  --border-gold-light: 1px solid rgba(201, 151, 58, 0.08);
+}
+
+/* ── DARK MODE SUPPORT ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #F2EAD8;
+    --bg-gray: #1A1A1A;
+  }
+}

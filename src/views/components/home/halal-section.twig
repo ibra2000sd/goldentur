@@ -1,0 +1,41 @@
+{#
+| Variable         | Type    | Description                     |
+|------------------|---------|---------------------------------|
+| store            | object  | Store information                |
+#}
+
+<div class="py-16 bg-charcoal border-t border-b border-gold border-opacity-10">
+  <div class="max-w-7xl mx-auto px-5vw">
+    <div class="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
+      
+      {# Halal Seal #}
+      <div class="flex flex-col items-center justify-center">
+        <div class="w-36 h-36 rounded-full border-4 border-gold flex flex-col items-center justify-center relative flex-shrink-0">
+          <div class="absolute inset-1.5 border border-gold border-opacity-30 rounded-full"></div>
+          <span class="font-display text-4xl font-bold text-gold text-center leading-tight">حلال</span>
+          <span class="text-xs text-smoke uppercase tracking-widest mt-2">CERTIFIED HALAL</span>
+        </div>
+      </div>
+
+      {# Content #}
+      <div class="flex-1 text-right lg:text-right">
+        <h3 class="text-3xl font-bold text-cream mb-4 font-display">
+          الذبح على السنّة والشريعة
+        </h3>
+        
+        <p class="text-smoke leading-relaxed mb-6 text-base">
+          جميع منتجاتنا مذبوحة وفق الضوابط الشرعية الإسلامية، معتمدة من جهات رقابية دولية معترف بها، 
+          مع توثيق كامل لكل دفعة من المصدر إلى التسليم.
+        </p>
+
+        {# Certifications #}
+        <div class="flex flex-wrap gap-3 justify-end">
+          <span class="border border-gold border-opacity-25 text-gold text-xs px-3 py-1.5 font-latin uppercase tracking-widest">SASO Certified</span>
+          <span class="border border-gold border-opacity-25 text-gold text-xs px-3 py-1.5 font-latin uppercase tracking-widest">SFDA Approved</span>
+          <span class="border border-gold border-opacity-25 text-gold text-xs px-3 py-1.5 font-latin uppercase tracking-widest">International Halal</span>
+          <span class="border border-gold border-opacity-25 text-gold text-xs px-3 py-1.5 font-latin uppercase tracking-widest">ISO 22000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

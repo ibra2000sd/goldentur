@@ -1,0 +1,74 @@
+{#
+| Variable         | Type    | Description                     |
+|------------------|---------|---------------------------------|
+| store            | object  | Store information                |
+#}
+
+<section class="py-20 bg-black" id="origin-story">
+  <div class="max-w-7xl mx-auto px-5vw">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
+      
+      {# Visual Section #}
+      <div class="relative h-96 lg:h-full">
+        <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-black to-black rounded-lg flex items-center justify-center">
+          <div class="text-9xl opacity-30 animate-pulse">🌍</div>
+          <div class="absolute inset-5 border border-gold border-opacity-20 rounded-lg"></div>
+        </div>
+        <div class="absolute -bottom-6 -left-6 w-40 h-40 bg-red opacity-10 rounded-full"></div>
+        <div class="absolute top-6 -right-6 text-gold font-bold text-xs uppercase tracking-widest bg-gold bg-opacity-0 px-4 py-2 border border-gold">
+          OUR STORY
+        </div>
+      </div>
+
+      {# Text Section #}
+      <div class="text-right">
+        <div class="flex items-center gap-3 mb-6 justify-end">
+          <span class="text-xs uppercase tracking-widest text-gold font-latin">From Farm to Table</span>
+          <span class="w-10 h-px bg-gold"></span>
+        </div>
+
+        <h2 class="text-4xl lg:text-5xl font-bold text-cream mb-6 font-display">
+          رحلة اللحم<br>
+          <em class="text-gold italic">من أفريقيا إلى مائدتك</em>
+        </h2>
+
+        <p class="text-bone leading-relaxed mb-6 text-base">
+          نؤمن أن جودة اللحم تبدأ قبل المجزر بكثير — من نوع العلف، وطريقة التربية، 
+          وظروف المعيشة. لذلك نختار مزارعنا بعناية بالغة في هضاب إثيوبيا وسهول كينيا.
+        </p>
+
+        <p class="text-bone leading-relaxed mb-8 text-base">
+          كل قطعة تمر بفحص دقيق قبل التغليف والشحن المبرد المباشر إلى المملكة، 
+          لتضمن لك طعماً لم تختبره من قبل.
+        </p>
+
+        {# Journey Route #}
+        <div class="flex items-center gap-2 mb-8 p-5 bg-gold bg-opacity-5 border border-gold border-opacity-10 rounded">
+          <div class="text-center flex-1">
+            <span class="text-2xl block mb-1">🇪🇹</span>
+            <span class="text-xs text-gold font-bold uppercase">إثيوبيا</span>
+          </div>
+          <span class="text-gold text-opacity-50">→</span>
+          <div class="text-center flex-1">
+            <span class="text-2xl block mb-1">🇰🇪</span>
+            <span class="text-xs text-gold font-bold uppercase">كينيا</span>
+          </div>
+          <span class="text-gold text-opacity-50">→</span>
+          <div class="text-center flex-1">
+            <span class="text-2xl block mb-1">✦</span>
+            <span class="text-xs text-gold font-bold uppercase">الفحص</span>
+          </div>
+          <span class="text-gold text-opacity-50">→</span>
+          <div class="text-center flex-1">
+            <span class="text-2xl block mb-1">🇸🇦</span>
+            <span class="text-xs text-gold font-bold uppercase">الرياض</span>
+          </div>
+        </div>
+
+        <a href="{{ link('pages/about') }}" class="btn-primary inline-block">
+          اقرأ قصتنا كاملة
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

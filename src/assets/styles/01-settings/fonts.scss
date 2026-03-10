@@ -1,0 +1,49 @@
+/* ══════════════════════════════════════════════════════════════
+   AL-TOUR AL-DHAHABI - Premium Fonts
+   ══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;600&display=swap');
+
+/* ── FONT FAMILY DEFINITIONS ── */
+$font-noto-naskh: 'Noto Naskh Arabic', serif;
+$font-amiri: 'Amiri', serif;
+$font-cormorant: 'Cormorant Garamond', serif;
+
+/* ── APPLY TO ROOT ── */
+:root {
+  --font-ar: #{$font-noto-naskh};
+  --font-dis: #{$font-amiri};
+  --font-lat: #{$font-cormorant};
+}
+
+/* ── FONT SMOOTHING ── */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── HEADING STYLES ── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-dis, $font-amiri);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ── BODY TEXT ── */
+body, p, span, a, button {
+  font-family: var(--font-ar, $font-noto-naskh);
+}
+
+/* ── ACCENT TEXT ── */
+.accent-text, .display-text {
+  font-family: var(--font-dis, $font-amiri);
+  font-style: italic;
+}
+
+/* ── LATIN TEXT ── */
+.latin-text, .tag, .label {
+  font-family: var(--font-lat, $font-cormorant);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
